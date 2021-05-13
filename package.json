@@ -1,0 +1,23 @@
+{
+  "name": "Education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrOz3nFir3/Education.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrOz3nFir3/Education/issues"
+  },
+  "homepage": "https://github.com/FrOz3nFir3/Education#readme",
+  "devDependencies": {
+    "tailwindcss": "^2.1.2"
+  }
+}
