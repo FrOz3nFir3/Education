@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title> Home</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="./Css/tailwind.css">
-
+	<meta charset="UTF-8">
+	<title>Education</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="/Css/tailwind.css" type="text/css">
+	<link rel="stylesheet" href="/Css/style.css" type="text/css">
 </head>
-
-<body >
-    
-    <section class="call-to-action split ">
-      <nav class="navbar navbar-expand-lg  sticky-top ">
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="container-fluid">
           
           <a class="navbar-brand " href="#">Name</a>
@@ -28,7 +20,7 @@
           <div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 ">
               <li class="nav-item d-flex">
-               <b> <a class="nav-link active " aria-current="page" href="home.html">Home</a></b>
+               <b> <a class="nav-link active " aria-current="page" href="/home.html">Home</a></b>
                </li>
                <li class="nav-item d-flex">
                 <b><a class="nav-link active " aria-current="page" href="#">About us</a></b>
@@ -46,18 +38,26 @@
           </div>
         </div>
       </nav>
-          
-    <!-- <img id="home_background" src="img\home_background.jpg" alt="background"> -->
-    <div class="home_arrow_div">
-        <h2>Start Learning</h2>
-        <a href="../index.html"><img id="home_arrow_btn" src="img\home_right_arrow.svg" alt="arrow_button"></a>
-    </div>
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-crossorigin="anonymous"></script>
-</section>
-    
-</body>
 
+
+<div class="flex ">
+	<div class="flex-20 bg-green-300">Topics</div>
+	<div class="flex-60 min-h-screen">Main Content</div>
+	<div class="compiler flex-20 p-16p-16 bg-green-300 ">Compiler</div>
+</div>
+
+<footer>
+	<ul class="flex bg-indigo-200 justify-evenly">
+		<li><a href="#">Twitter</a></li>
+		<li><a href="#">Instagram</a></li>
+		<li><a href="#">sdf</a></li>
+	</ul>
+</footer>
+<script src="js/script.js"></script>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+</body>
 </html>

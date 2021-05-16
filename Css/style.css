@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .flex-20 {
     flex-basis: 20%;
 }
@@ -13,11 +18,7 @@
 
 
 /*Home*/
-.home_body{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
+
 .img {
     /* max-width: 100%; */
     height: auto;
@@ -29,17 +30,11 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    color: white;
     padding: 1em;
     
   }
-/* utility classes (same as bootstrap) learn more about flexbox on google / youtube*/
-.split {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    
-  }
+
+  
 .home_website_name{
     font-size: 30px;
     margin-left: 5%;
@@ -53,16 +48,8 @@
     list-style: none;
     font-size: 25px;
 }
-li:nth-child(1){
-    cursor: pointer;
-}
-li:nth-child(2){
-    margin-left: 20%;
-    cursor: pointer;
-}
-li:nth-child(3){
-    margin-left: 20%;
-    cursor: pointer;
+.navbar-brand{
+    color: white;
 }
 #home_background{
     background-size: cover;
@@ -96,3 +83,4 @@ li:nth-child(3){
     filter: drop-shadow(0px 0px 10px rgb(0, 217, 255));
     cursor: pointer;
 }
+
