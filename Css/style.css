@@ -23,6 +23,23 @@
     height: auto;
     display: block;
   }
+  .call-to-action{
+    /* The background image of the landing page */
+    background-image: url("../img/home_background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    padding: 1em;
+    
+  }
+/* utility classes (same as bootstrap) learn more about flexbox on google / youtube*/
+.split {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+  }
 .home_website_name{
     font-size: 30px;
     margin-left: 5%;
