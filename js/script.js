@@ -15,7 +15,7 @@ function addOrRemoveCompilerButton() {
     compiler.style.display = "none";
     if (!buttonAlreadyExists()) {
       let button = document.createElement("button");
-      button.innerText = "Compiler";
+      button.innerText = "compiler";
       button.style = "position:fixed; right:0; top:350px; padding:1em";
       button.className = "bg-green-400";
       div.append(button);
