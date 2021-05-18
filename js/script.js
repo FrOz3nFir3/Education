@@ -1,6 +1,5 @@
 var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
-
 // on smaller screen sizes adding the button
 if (window.innerWidth <= 768) {
   addOrRemoveCompilerButton();
@@ -15,8 +14,10 @@ function addOrRemoveCompilerButton() {
     compiler.style.display = "none";
     if (!buttonAlreadyExists()) {
       let button = document.createElement("button");
-      button.innerText = "compiler";
-      button.style = "position:fixed; right:0; top:350px; padding:1em";
+      button.innerText = "Compiler";
+      button.style = `position:fixed; right:0; top:${
+        window.innerHeight / 2
+      }px; padding:1em`;
       button.className = "bg-green-400";
       div.append(button);
     }
@@ -24,11 +25,14 @@ function addOrRemoveCompilerButton() {
     // removing the button and displaying back the compiler (div)
     compiler.style.display = "block";
     let button = buttonAlreadyExists();
-    button.remove();
+    // making sure the button exists otherwise nothing to remove (it might be already removed)
+    if (button) {
+      button.remove();
+    }
   }
 }
 // resizing event will occur a lot, meaning a lot of creation and duplication of buttons, that's why checking if button is
 //already in the dom.
 function buttonAlreadyExists() {
-  return document.querySelector("button");
+  return document.querySelector("button.bg-green-400");
 }

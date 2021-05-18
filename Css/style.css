@@ -10,13 +10,24 @@
 .flex-60 {
     flex-basis: 60%;
 }
+.split{
+    display: flex;
+}
 @media (max-width: 640px){
     .split{
         flex-direction: column;
     }
 }
 
-
+div.content{
+    min-height: 85vh;
+}
+body > .navbar{
+    min-height: 10vh;
+}
+footer > ul{
+    min-height:5vh;
+}
 /*Home*/
 
 .img {
@@ -29,9 +40,9 @@
     background-image: url("../img/home_background.jpg");
     background-size: cover;
     background-position: center;
-    height: 89vh;
+    height: 100vh;
     padding: 1em;
-    
+    flex-direction: column;
   }
 
   
