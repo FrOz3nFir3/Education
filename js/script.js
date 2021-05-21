@@ -4,7 +4,6 @@ var div = document.querySelector("div.flex");
 if (window.innerWidth <= 768) {
   addOrRemoveCompilerButton();
 }
-
 // this code will work, when someone scrolls (either using inspect element or resizes the browser window)
 window.addEventListener("resize", addOrRemoveCompilerButton);
 
