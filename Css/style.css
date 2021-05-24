@@ -33,6 +33,10 @@ ul[class]{
     .split{
         flex-direction: column;
     }
+
+    
+    
+
 }
 
 div.content{
@@ -154,6 +158,18 @@ footer > ul{
     .team-container{
         padding: 1em;
     }
+    .contact_us_div{
+        background-color: #393e46;
+        color: #eeeeee;
+        margin-left: 43px;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 2px 5px #393e46; 
+    }
+    .h{
+        
+        font-size: xx-large;
+    }
+    
 }
 .teams{
     justify-content: space-between;
