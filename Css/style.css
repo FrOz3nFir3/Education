@@ -142,7 +142,7 @@ footer > ul{
 .contact_us_div{
     background-color: #393e46;
     color: #eeeeee;
-    margin-left: 343px;
+    /* margin-left: 343px; */
     border-radius: 10px 10px 0px 0px;
 }
 

@@ -1,5 +1,6 @@
 var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
+
 // on smaller screen sizes adding the button
 if (window.innerWidth <= 768) {
   addOrRemoveCompilerButton();
@@ -35,3 +36,7 @@ function addOrRemoveCompilerButton() {
 function buttonAlreadyExists() {
   return document.querySelector("button.bg-green-400");
 }
+
+
+
+
