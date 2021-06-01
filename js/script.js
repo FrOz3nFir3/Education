@@ -1,5 +1,7 @@
 var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
+var submitButton = document.querySelector("#submit");
+var preview = document.querySelector("#preview");
 
 // on smaller screen sizes adding the button
 if (window.innerWidth <= 768) {
@@ -37,6 +39,36 @@ function buttonAlreadyExists() {
   return document.querySelector("button.bg-green-400");
 }
 
+submitButton.addEventListener("click", fetchOutput);
 
+async function fetchOutput() {
+  var code = document.querySelector("#source_code");
+  var language = document.querySelector("select");
 
+  var apiUrl = `http://api.paiza.io/runners/create?source_code=${code.value}&language=${language.value}&api_key=guest`;
+  console.log(apiUrl);
 
+  var results = await fetch(apiUrl, {
+    method: "POST",
+  });
+  var { id } = await results.json();
+
+  var runnerStatus = await fetch(
+    `http://api.paiza.io/runners/get_status?id=${id}&api_key=guest`
+  );
+  console.log(runnerStatus);
+  var { status } = await runnerStatus.json();
+  console.log(status);
+
+  setTimeout(showOutput.bind(null, id), 500);
+}
+
+async function showOutput(id) {
+  var runnerDetails = await fetch(
+    `http://api.paiza.io/runners/get_details?id=${id}&api_key=guest`
+  );
+  var { stdout } = await runnerDetails.json();
+  console.log(stdout);
+
+  preview.innerText = stdout;
+}

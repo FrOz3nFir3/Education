@@ -33,12 +33,10 @@ ul[class]{
     .split{
         flex-direction: column;
     }
-
-    
-    
-
 }
-
+.flow-content > * + * {
+    margin-top: var(--spacer,1em);
+}
 div.content{
     min-height: 85vh;
 }
@@ -225,4 +223,11 @@ footer > ul{
 .team-member > .social{
     display: flex;
     gap: 1em;
+}
+
+/* content page */
+#preview {
+    background-color: #00adb5;
+    min-height: 25vh;
+    color: white;
 }
