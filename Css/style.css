@@ -226,6 +226,11 @@ footer > ul{
 }
 
 /* content page */
+#source_code{
+    min-height: 35vh;
+    width: 100%;
+}
+
 #preview {
     background-color: #00adb5;
     min-height: 25vh;
