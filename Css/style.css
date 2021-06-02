@@ -213,7 +213,7 @@ footer > ul{
 /*for hover effect*/
 .team-member:hover{
     cursor: pointer;
-    box-shadow:  0px 0px 5px #393e46;  
+    box-shadow:  0px 0px 5px #393e46;
 }
 /* making img circular*/
 .team-member > img {
@@ -235,4 +235,13 @@ footer > ul{
     background-color: #00adb5;
     min-height: 25vh;
     color: white;
+}
+
+.compiler-mobile {
+    position: absolute;
+    z-index: 99999;
+    top: .3rem;
+    bottom: .3rem;
+    left: .3em;
+    right: .3em;
 }

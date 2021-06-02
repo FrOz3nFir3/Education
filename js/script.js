@@ -13,32 +13,67 @@ window.addEventListener("resize", addOrRemoveCompilerButton);
 function addOrRemoveCompilerButton() {
   // on smaller screenSizes adding button and hiding the div.
   if (window.innerWidth <= 768) {
-    compiler.style.display = "none";
-    if (!buttonAlreadyExists()) {
+    var [, , , , , compilerMobile] = compiler.classList;
+    // not hiding the compiler screen if user has clicked the compiler button..
+    if (compilerMobile != "compiler-mobile") {
+      compiler.hidden = true;
+    }
+    if (!buttonAlreadyExists("button.bg-green-400")) {
       let button = document.createElement("button");
       button.innerText = "Compiler";
       button.style = `position:fixed; right:0; top:${
         window.innerHeight / 2
       }px; padding:1em`;
       button.className = "bg-green-400";
+      button.id = "compiler-button";
       div.append(button);
     }
+    let compilerButton = document.querySelector("#compiler-button");
+    compilerButton.addEventListener("click", showCompiler);
   } else {
     // removing the button and displaying back the compiler (div)
-    compiler.style.display = "block";
-    let button = buttonAlreadyExists();
+    compiler.hidden = false;
+    compiler.classList.remove("compiler-mobile");
+    let button = buttonAlreadyExists("button.bg-green-400");
+    let closeButton = buttonAlreadyExists("#close-compiler");
     // making sure the button exists otherwise nothing to remove (it might be already removed)
     if (button) {
       button.remove();
     }
+    if (closeButton) {
+      closeButton.remove();
+    }
   }
+}
+// will show compiler screen on mobile phones
+function showCompiler() {
+  compiler.hidden = false;
+  compiler.classList.add("compiler-mobile");
+  var [firstDiv] = compiler.children;
+
+  // only add the button if already doesn't exist otherwise duplicate buttons
+  if (!buttonAlreadyExists("#close-compiler")) {
+    let newButton = document.createElement("button");
+    newButton.addEventListener("click", removeCompiler);
+    newButton.innerText = "Close";
+    newButton.id = "close-compiler";
+    newButton.className = "bg-red-300 p-2";
+    newButton.style = "margin-left:auto";
+    firstDiv.append(newButton);
+  }
+}
+// when user click on close compiler removing compiler screen
+function removeCompiler() {
+  compiler.classList.remove("compiler-mobile");
+  compiler.hidden = true;
 }
 // resizing event will occur a lot, meaning a lot of creation and duplication of buttons, that's why checking if button is
 //already in the dom.
-function buttonAlreadyExists() {
-  return document.querySelector("button.bg-green-400");
+function buttonAlreadyExists(name) {
+  return document.querySelector(name);
 }
 
+// hitting api for compiler sections
 submitButton.addEventListener("click", fetchOutput);
 
 async function fetchOutput() {
