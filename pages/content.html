@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="../Css/style.css" type="text/css">
 
 </head>
-<body>
+<body onload="compilerSize();" onresize="compilerSize();">
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
 	<div class="container-fluid">
 
@@ -42,7 +42,9 @@
 		</div>
 	</div>
 </nav>
-
+<div class="compilerBtn">
+	<button id="compilerBtn" style="display: none;" onclick="compilerSize();">Compiler</button>
+</div>
 
 <div class="flex content ">
 	<div class="flex-20 bg-green-300">Topics</div>
@@ -67,13 +69,13 @@
 			<label for="source_code">Type Source Code: </label>
 			<textarea id="source_code" name="source_code"></textarea>
 		</div>
-
+		
 		<div class="output">
 			<h2>Output: </h2>
 			<div id="preview"></div>
 		</div>
 
-		<button class="btn btn-primary" id="submit">Submit</button>
+		<button class="btn btn-primary" id="submit" >Submit</button>
 	</div>
 </div>
 

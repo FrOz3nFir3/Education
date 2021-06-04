@@ -5,10 +5,10 @@ var preview = document.querySelector("#preview");
 
 // on smaller screen sizes adding the button
 if (window.innerWidth <= 768) {
-  addOrRemoveCompilerButton();
+  // addOrRemoveCompilerButton();
 }
 // this code will work, when someone scrolls (either using inspect element or resizes the browser window)
-window.addEventListener("resize", addOrRemoveCompilerButton);
+// window.addEventListener("resize", addOrRemoveCompilerButton);
 
 function addOrRemoveCompilerButton() {
   // on smaller screenSizes adding button and hiding the div.
@@ -18,6 +18,7 @@ function addOrRemoveCompilerButton() {
     if (compilerMobile != "compiler-mobile") {
       compiler.hidden = true;
     }
+    console.log("times called");
     if (!buttonAlreadyExists("button.bg-green-400")) {
       let button = document.createElement("button");
       button.innerText = "Compiler";
@@ -47,6 +48,7 @@ function addOrRemoveCompilerButton() {
 }
 // will show compiler screen on mobile phones
 function showCompiler() {
+  debugger;
   compiler.hidden = false;
   compiler.classList.add("compiler-mobile");
   var [firstDiv] = compiler.children;
@@ -106,4 +108,22 @@ async function showOutput(id) {
   console.log(stdout);
 
   preview.innerText = stdout;
+}
+
+function compilerSize() {
+  debugger;
+  var compilers = document.querySelector(".compiler");
+  var compileBtn = document.querySelector("#compilerBtn");
+  var compilerMobile = document.querySelector(".compiler-mobile");
+
+  if (window.innerWidth < 768) {
+    compilers.style.display = "none";
+    compileBtn.style.display = "block";
+    /*compilerMobile.style.display = "block";*/
+    compilers.classList.remove("compiler");
+  } else {
+    compilers.style.display = "block";
+    compileBtn.style.display = "none";
+    compilers.classList.add("compiler");
+  }
 }
