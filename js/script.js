@@ -21,9 +21,8 @@ function addOrRemoveCompilerButton() {
     if (!buttonAlreadyExists("button.bg-green-400")) {
       let button = document.createElement("button");
       button.innerText = "Compiler";
-      button.style = `position:fixed; right:0; top:${
-        window.innerHeight / 2
-      }px; padding:1em`;
+      button.style = `position:fixed; right:0; top:${window.innerHeight / 2
+        }px; padding:1em`;
       button.className = "bg-green-400";
       button.id = "compiler-button";
       div.append(button);
@@ -106,4 +105,15 @@ async function showOutput(id) {
   console.log(stdout);
 
   preview.innerText = stdout;
+}
+
+function compilerEnable() {
+  var compiler_mobile = document.querySelector(".compiler_mobile");
+
+  compiler_mobile.style.display = "block";
+}
+function closeCompiler() {
+  var compiler_mobile = document.querySelector(".compiler_mobile");
+
+  compiler_mobile.style.display = "none";
 }
