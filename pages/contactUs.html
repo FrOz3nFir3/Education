@@ -14,20 +14,17 @@
 	<title>Contact Us</title>
 </head>
 
-<body class="contact_body relative flex flex-col items-center items-center ">
-	<div class="contact_us_div  lg:my-1     text-center w-2/4  items-center">
-		<h1 class="lg:text-4xl lg:mt-8 lg:mb-8 ">Contact Us</h1>
-	</div>
-	<main
-		class="contact_container flex justify-center items-center lg:w-2/4 lg:h-4/5 text-left m-auto self-center mt-10 rounded-lg">
-		<form action="#" class="w-2/4 mt-32 mb-8">
+<body class="contact_body relative mt-8 flex flex-col items-center items-center ">
+	<main class="contact_container flex justify-center items-center text-left m-auto self-center mt-10 rounded-lg">
+		<form action="#" class="w-2/4 mt-28 mb-8">
+			<h1 class="contact_text">Contact Us</h1>
 			<label for="contact_name" class="text-lg">Name:</label><br>
 			<input type="text" class="contact_input  w-full mb-2 rounded-md" id="contact_name" required><br>
 			<label for="contact_email" class="text-lg">E-mail:</label><br>
 			<input type="email" id="contact_email" class="contact_input w-full mb-2 rounded-md" required><br>
 			<label for="contact_comment" class="text-lg">Leave comment or suggestion :)</label><br>
 			<textarea name="contact_comment" id="contact_comment" cols="30" rows="7"
-				class="contact_input w-full mb-2 rounded-md"></textarea><br>
+				class="contact_input w-full mb-2 rounded-md" style="resize: none;"></textarea><br>
 			<input type="submit" class="text-lg w-full h-10 rounded-md mt-4" id="contact_submit_btn">
 		</form>
 	</main>
