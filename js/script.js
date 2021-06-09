@@ -2,7 +2,7 @@ var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
 var submitButton = document.querySelector("#submit");
 var preview = document.querySelector("#preview");
-
+// sjdfkjsdfjlk
 // on smaller screen sizes adding the button
 if (window.innerWidth <= 768) {
   // addOrRemoveCompilerButton();
@@ -110,7 +110,6 @@ async function showOutput(id) {
   preview.innerText = stdout;
 }
 
-
 function compilerEnable() {
   var compiler_mobile = document.querySelector(".compiler_mobile");
 
@@ -121,13 +120,12 @@ function closeCompiler() {
 
   compiler_mobile.style.display = "none";
 }
-
 // function compilerSize() {
 //   debugger;
 //   var compilers = document.querySelector(".compiler");
 //   var compileBtn = document.querySelector("#compilerBtn");
 //   var compilerMobile = document.querySelector(".compiler-mobile");
-
+//
 //   if (window.innerWidth < 768) {
 //     compilers.style.display = "none";
 //     compileBtn.style.display = "block";
@@ -139,4 +137,3 @@ function closeCompiler() {
 //     compilers.classList.add("compiler");
 //   }
 // }
-
