@@ -122,21 +122,21 @@ function closeCompiler() {
   compiler_mobile.style.display = "none";
 }
 
-function compilerSize() {
-  debugger;
-  var compilers = document.querySelector(".compiler");
-  var compileBtn = document.querySelector("#compilerBtn");
-  var compilerMobile = document.querySelector(".compiler-mobile");
+// function compilerSize() {
+//   debugger;
+//   var compilers = document.querySelector(".compiler");
+//   var compileBtn = document.querySelector("#compilerBtn");
+//   var compilerMobile = document.querySelector(".compiler-mobile");
 
-  if (window.innerWidth < 768) {
-    compilers.style.display = "none";
-    compileBtn.style.display = "block";
-    /*compilerMobile.style.display = "block";*/
-    compilers.classList.remove("compiler");
-  } else {
-    compilers.style.display = "block";
-    compileBtn.style.display = "none";
-    compilers.classList.add("compiler");
-  }
-}
+//   if (window.innerWidth < 768) {
+//     compilers.style.display = "none";
+//     compileBtn.style.display = "block";
+//     // compilerMobile.style.display = "block";
+//     compilers.classList.remove("compiler");
+//   } else {
+//     compilers.style.display = "block";
+//     compileBtn.style.display = "none";
+//     compilers.classList.add("compiler");
+//   }
+// }
 
