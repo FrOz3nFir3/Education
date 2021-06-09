@@ -119,12 +119,28 @@ footer > ul{
     font-family: 'Rubik', sans-serif;
 }
 .contact_container{
+    width: 50vw;
+    height: 92vh;
     box-shadow:  5px 5px 10px #d9d9d9,
              -5px -5px 10px #ffffff;                          
 }
 .contact_input{
     box-shadow: inset 5px 5px 10px #d9d9d9,
             inset -5px -5px 10px #ffffff;
+}
+.contact_text{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50vw;
+    height: 80px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #393e46;
+    color: #eeeeee;
+    font-size: 35px;
+    padding-top: 20px;
 }
 #contact_submit_btn{
     background-color: #aad8d3;
@@ -142,7 +158,16 @@ footer > ul{
     /* margin-left: 343px; */
     border-radius: 10px 10px 0px 0px;
 }
-
+@media (max-width: 1022px){
+    .contact_container{
+        width: fit-content;
+        height: 94vh;                          
+    }
+    .contact_text{
+        width: fit-content;
+        padding: 10px 50px 0px 50px;
+    }
+}
 /********************/
 
 /* about us page */
