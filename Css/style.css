@@ -6,6 +6,12 @@ COLORS:
 #aad8d3 light blue
 #eeeeee white
 */
+:root{
+    --black:#393e46;
+    --dark-blue:#00adb5;
+    --light-blue:#aad8d3;
+    --white: #eeeeee;
+}
 
 /* reset */
 *{
@@ -111,6 +117,26 @@ footer > ul{
 #home_arrow_btn:hover{
     filter: drop-shadow(0px 0px 10px rgb(0, 217, 255));
     cursor: pointer;
+}
+/********************************/
+/*Content*/
+.content_navbar{
+    background-color: #393e46 ;
+    color: #eeeeee;
+    z-index: 100;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+}
+.content_nav_link{
+    color: #eeeeee;
+    margin-right: 10px;
+}
+.content_nav_link:hover{
+    color: #00adb5;
+}
+.nti{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    color: #eeeeee;
 }
 /********************************/
 /*Contact*/
