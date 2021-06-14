@@ -54,6 +54,7 @@ footer > ul{
     min-height:5vh;
 }
 /*Home*/
+<<<<<<< HEAD
 
  .img {
     /* max-width: 100%; */
@@ -119,7 +120,15 @@ footer > ul{
 #home_arrow_btn:hover{
     filter: drop-shadow(0px 0px 10px rgb(0, 217, 255));
     cursor: pointer;
+=======
+.home-body{
+    font-family: 'Rubik' , sans-serif;
+>>>>>>> 5fa52c2d40136e3c69e4e49d011c8ec19e1a654f
 }
+.call-to-action{
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
 /********************************/
 /*Content*/
 .content_navbar{
@@ -128,6 +137,7 @@ footer > ul{
     z-index: 100;
     width: 100%;
     border-radius: 0px 0px 20px 20px;
+    box-shadow:  2px 2px 10px rgb(0, 173, 181 ,0.8);
 }
 .content_nav_link{
     color: #eeeeee;
