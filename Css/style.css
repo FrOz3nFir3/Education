@@ -75,7 +75,6 @@ footer > ul{
              -5px -5px 10px #ffffff;
 }
 .home-heading{
-    margin-left: 45px;
     color: #00adb5;
 }
 .home-button {
@@ -332,6 +331,44 @@ footer > ul{
     #compilerBtn{
         display: block;
     }
+
+    .home-main-section{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin-top: 30px;
+        width: 90%;
+        background-color: #eeeeee;
+        border-radius: 10px;
+        box-shadow:  5px 5px 10px #d9d9d9,
+                 -5px -5px 10px #ffffff;
+    }
+    .home-button span {
+        
+        cursor: pointer;
+        display: inline-block;
+        /* position: relative; */
+        transition: 0.5s;
+    }
+    .home-button {
+        margin-top: 30px;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 0px;
+    }
+    .home-heading{
+        color: #00adb5;
+        margin-top: 100px;
+    }
+    
 }
 @media screen and (min-width: 768px) {
     .compiler_mobile{
