@@ -35,7 +35,6 @@ ul[class]{
 .split{
     display: flex;
 }
-
 @media (max-width: 640px){
     .split{
         flex-direction: column;
@@ -54,93 +53,9 @@ footer > ul{
     min-height:5vh;
 }
 /*Home*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-
- .img {
-    /* max-width: 100%; */
-    height: auto;
-    display: block;
-  } 
-=======
-
-.img {
-    /* max-width: 100%; */
-    height: auto;
-    display: block;
-  }
->>>>>>> parent of 5fa52c2 (created home page based on theme)
-  .call-to-action{
-    /* The background image of the landing page */
-    background-image: url("../img/home_background.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    padding: 1em;
-    flex-direction: column;
-  }
-
-  
-.home_website_name{
-    font-size: 30px;
-    margin-left: 5%;
-}
-
-.home_headings{
-    position: absolute;
-    display: inline-flex;
-    left: 75%;
-    top: 10%;
-    list-style: none;
-    font-size: 25px;
-}
-.navbar-brand{
-    color: white;
-}
-#home_background{
-    background-size: cover;
-  background-position: center;
-  height: 94vh;
-  
-  padding: 1em;
-}
-.home_arrow_div{
-    position: absolute;
-    top: 25%;
-    left: 87%;
-    transform: translate(-50% , 50%);
-    background-color: rgba(29, 29, 29, 0.6);
-    color: white;
-    backdrop-filter: blur(3px);
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-    text-shadow: 2px 2px 5px black;
-<<<<<<< HEAD
-    /* margin: auto !important; */
-=======
->>>>>>> parent of 5fa52c2 (created home page based on theme)
-}
-.home_arrow_div:hover{
-    box-shadow: 0px 0px 8px rgb(0, 217, 255);
-}
-#home_arrow_btn{
-    width: 100px;
-}
-#home_arrow_btn:hover{
-    filter: drop-shadow(0px 0px 10px rgb(0, 217, 255));
-    cursor: pointer;
-<<<<<<< HEAD
-=======
 .home-body{
     font-family: 'Rubik' , sans-serif;
-<<<<<<< HEAD
->>>>>>> 5fa52c2d40136e3c69e4e49d011c8ec19e1a654f
-=======
     background-color: #eeeeee;
->>>>>>> fb7a7f287a93963037345aabc099b31ae96f7aa0
 }
 .call-to-action{
     font-family: 'Courier New', Courier, monospace;
@@ -204,8 +119,6 @@ footer > ul{
 .home-button:hover span:after {
     opacity: 1;
     right: 0;
-=======
->>>>>>> parent of 5fa52c2 (created home page based on theme)
 }
 /********************************/
 /*Content*/
@@ -215,10 +128,7 @@ footer > ul{
     z-index: 100;
     width: 100%;
     border-radius: 0px 0px 20px 20px;
-<<<<<<< HEAD
     box-shadow:  2px 2px 10px rgb(57, 62, 70, 0.8);
-=======
->>>>>>> parent of 5fa52c2 (created home page based on theme)
 }
 .content_nav_link{
     color: #eeeeee;
