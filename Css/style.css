@@ -336,6 +336,7 @@ footer > ul{
         display: flex;
         flex-direction: column;
         justify-self: center;
+        justify-content: space-evenly;
         margin-top: 30px;
         width: 90%;
         background-color: #eeeeee;
@@ -351,7 +352,6 @@ footer > ul{
         transition: 0.5s;
     }
     .home-button {
-        margin-top: 30px;
         border-radius: 4px;
         background-color: #f4511e;
         border: none;
@@ -366,7 +366,7 @@ footer > ul{
     }
     .home-heading{
         color: #00adb5;
-        margin-top: 100px;
+        
     }
     
 }
