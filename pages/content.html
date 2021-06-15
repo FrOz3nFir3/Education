@@ -79,9 +79,22 @@
 	</div>
 	</div>
 	<!-- ----------- -->
-	<div class="flex content ">
-		<div class="flex-20 bg-green-300">Topics</div>
-		<div class="flex-60">Main Content</div>
+	<div class="split content  ">
+		<!-- <div class="grid md:grid-cols-3  sm:grid-rows-6  content"> -->
+		<div class=" flex-20  bg-green-300 flex-grow-0  ">
+			<div class="btn-group d-md-none w-100			">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					Topics
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end">
+				  <li><button class="dropdown-item" type="button">Action</button></li>
+				  <li><button class="dropdown-item" type="button">Another action</button></li>
+				  <li><button class="dropdown-item" type="button">Something else here</button></li>
+				</ul>
+			  </div>
+			  <div class="dn">
+			Topics</div></div>
+		<div class="flex-60 flex-grow ">Main Content</div>
 		<div class="compiler flex-20 p-16p-16 bg-green-300 flow-content">
 			<div>
 				<label for="language">Select a Programming Language:</label>
