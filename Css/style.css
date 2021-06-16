@@ -344,15 +344,23 @@ footer > ul{
     
 }
 
+.dn1{
+    display: none;
+}
 @media screen and (max-width: 768px){
  /*Content*/
  .dn{
     display: none;
 }
+.dn1{
+    display: block;
+}
 }
 
 @media screen and (max-width: 1024px){
      
+
+
     /*Home*/
     .home-main-section{
         display: flex;
