@@ -28,6 +28,11 @@ ul[class]{
     flex-basis: 20%;
 }
 
+  /*Content*/
+  .dn{
+    display: block;
+}
+
 .flex-60 {
     flex-basis: 60%;
 }
@@ -36,7 +41,7 @@ ul[class]{
 .split{
     display: flex;
 }
-@media (max-width: 640px){
+@media (max-width: 768px){
     .split{
         flex-direction: column;
     }
@@ -339,12 +344,15 @@ footer > ul{
     
 }
 
-
-@media screen and (max-width: 1024px){
-   /*Content*/
-   .dn{
+@media screen and (max-width: 768px){
+ /*Content*/
+ .dn{
     display: none;
 }
+}
+
+@media screen and (max-width: 1024px){
+     
     /*Home*/
     .home-main-section{
         display: flex;
@@ -384,7 +392,7 @@ footer > ul{
     
 }
 @media screen and (min-width: 768px) {
-    
+ 
     .compiler_mobile{
         display: none;
     }
