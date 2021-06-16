@@ -147,6 +147,14 @@ footer > ul{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     color: #eeeeee;
 }
+.con-main-section{
+    margin:5px 40px 10px 0px;
+    width: 90%;
+    background-color: #eeeeee;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow:  5px 5px 10px #d9d9d9,
+             -5px -5px 10px #ffffff;
+}
 /********************************/
 /*Contact*/
 .navbar-brand{
@@ -156,8 +164,10 @@ footer > ul{
     margin-right: 40px;
 }
 .contact_body{
+    display: flex;
     background-color: #eeeeee;
     font-family: 'Rubik', sans-serif;
+    
 }
 .contact_container{
     width: 50vw;
@@ -183,16 +193,6 @@ footer > ul{
     font-size: 35px;
     padding-top: 20px;
 }
-#contact_submit_btn{
-    background-color: #aad8d3;
-    color: #393e46;
-}
-#contact_submit_btn:hover{
-    cursor: pointer;
-    background-color: #00adb5;
-    color: #eeeeee;
-    box-shadow: 0px 2px 5px rgb(0, 173, 181 , 0.5);   
-}
 .contact_us_div{
     background-color: #393e46;
     color: #eeeeee;
@@ -208,6 +208,61 @@ footer > ul{
         width: fit-content;
         padding: 10px 50px 0px 50px;
     }
+}
+.contact-button {
+    position: relative;
+    left: 55px;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    width: 200px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    align-content: center;
+}
+.contact-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.contact-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.contact-button:hover{
+    background-color: #eeeeee;
+    color: #f4511e;
+    border: 2px solid #f4511e;
+    box-shadow: 1px 1px 5px #f4511e;
+} 
+.home-button:hover span {
+    padding-right: 25px;
+}
+  
+.contact-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.contact-back-button{
+    z-index: 100;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    transform: translate(-50% , -50%);
+}
+.contact-back-button:hover{
+    cursor: pointer;
+    fill: #f4511e;
 }
 /********************/
 
@@ -240,6 +295,17 @@ footer > ul{
     justify-content: space-between;
     min-height: 65vh;
     gap:2em;
+}
+.aboutUs-back-button{
+    z-index: 100;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    transform: translate(-50% , -50%);
+}
+.aboutUs-back-button:hover{
+    cursor: pointer;
+    fill: #f4511e;
 }
 /*added below class to select whole container, and give shape and shadow*/
 .aboutUs_main{
@@ -306,6 +372,8 @@ footer > ul{
     left: .3em;
     right: .3em;
 }
+
+
 #compilerBtn{
     position: fixed;
     display: none;
@@ -324,6 +392,7 @@ footer > ul{
     z-index: 100;
     width: 70%;
 }
+
 #compilerCloseBtn{
     width: 100px;
     height: 50px;

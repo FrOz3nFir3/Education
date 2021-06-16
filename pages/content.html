@@ -22,7 +22,7 @@
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation" style="background-color: white; color: blue">
-				<span class="navbar-toggler-icon nti" ></span>
+				<span class="navbar-toggler-icon nti"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end " id="navbarSupportedContent">
 				<ul class="navbar-nav mb-2 mb-lg-0 ">
@@ -30,16 +30,19 @@
 						<b> <a class="content_nav_link nav-link" aria-current="page" href="../home.html">Home</a></b>
 					</li>
 					<li class="nav-item d-flex">
-						<b><a class="content_nav_link nav-link" aria-current="page" href="../pages/content.html">About us</a></b>
+						<b><a class="content_nav_link nav-link" aria-current="page" href="../pages/aboutUs.html">About
+								us</a></b>
 					</li>
 					<li class="nav-item d-flex">
-						<b> <a class="content_nav_link nav-link" aria-current="page" href="../pages/content.html">Content</a></b>
+						<b> <a class="content_nav_link nav-link" aria-current="page"
+								href="../pages/content.html">Content</a></b>
 					</li>
 					<!-- <li class="nav-item d-flex">
 					<b><a class="nav-link active " aria-current="page" href="#"></a></b>
 				</li> -->
 					<li class="nav-item d-flex">
-						<b><a class="content_nav_link nav-link" aria-current="page" href="../pages/contactUs.html">Contact us</a></b>
+						<b><a class="content_nav_link nav-link" aria-current="page"
+								href="../pages/contactUs.html">Contact us</a></b>
 					</li>
 				</ul>
 			</div>
@@ -47,9 +50,9 @@
 	</nav>
 	<!-- compiler mobile -->
 	<div class="compilerBtnClass">
-		<button id="compilerBtn" onclick="compilerEnable();">Compiler</button>
+		<button class="bg-green-400	" id="compilerBtn" onclick="compilerEnable();">Compiler</button>
 	</div>
-	<div class="compiler_mobile">
+	<div class="compiler_mobile bg-green-300	">
 		<div>
 			<label for="language">Select a Programming Language:</label>
 			<select name="language" id="language">
@@ -81,19 +84,22 @@
 	<!-- ----------- -->
 	<div class="split content  ">
 		<!-- <div class="grid md:grid-cols-3  sm:grid-rows-6  content"> -->
-		<div class=" flex-20  bg-green-300 flex-grow-0  ">
-			<div class=" btn-group dn1 ">
-				<button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-					Topics
-				</button>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item" href="#">Action</a></li>
-					<li><a class="dropdown-item" href="#">Another action</a></li>
-					<li><a class="dropdown-item" href="#">Something else here</a></li>
-				  </ul>				
-			  </div>
-			  <div class="dn">
-			Topics</div></div>
+		<div class=" btn-group dn1 ">
+			<button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1"
+				data-bs-toggle="dropdown" aria-expanded="false">
+				Topics
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		</div>
+		<div class=" flex-20  bg-green-300  con-main-section ">
+
+			<div class="dn ">
+				Topics</div>
+		</div>
 		<div class="flex-60 flex-grow ">Main Content</div>
 		<div class="compiler flex-20 p-16p-16 bg-green-300 flow-content">
 			<div>
