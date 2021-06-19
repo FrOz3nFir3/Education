@@ -199,7 +199,13 @@ footer > ul{
     /* margin-left: 343px; */
     border-radius: 10px 10px 0px 0px;
 }
+.mt{
+    margin-top: 5em;
+}
 @media (max-width: 1022px){
+    .mt{
+        margin-top: 5em;
+    }
     .contact_container{
         width: fit-content;
         height: 94vh;                          
@@ -210,8 +216,7 @@ footer > ul{
     }
 }
 .contact-button {
-    position: relative;
-    left: 55px;
+
     border-radius: 4px;
     background-color: #f4511e;
     border: none;
