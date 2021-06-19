@@ -207,7 +207,7 @@ footer > ul{
     
 }
 .contact_container{
-    width: 50vw;
+    min-width: 50vw;
     height: 92vh;
     box-shadow:  5px 5px 10px #d9d9d9,
              -5px -5px 10px #ffffff;                          
@@ -221,7 +221,7 @@ footer > ul{
     top: 7%;
     left: 50%;
     transform: translate(-50% , -50%);
-    width: 50vw;
+    min-width: 50vw;
     height: 80px;
     text-align: center;
     border-radius: 10px 10px 0px 0px;
@@ -244,7 +244,7 @@ footer > ul{
         margin-top: 5em;
     }
     .contact_container{
-        width: fit-content;
+        width: max-content;
         height: 94vh;                          
     }
     .contact_text{
