@@ -139,3 +139,23 @@ function goBack() {
 //     compilers.classList.add("compiler");
 //   }
 // }
+var main_content = document.querySelector(".content-main");
+function action() {
+  $.getJSON("../data.json", function (data) {
+    main_content.innerHTML = data.html;
+
+  });
+
+}
+function anotherAction() {
+  $.getJSON("../data.json", function (data) {
+    main_content.innerHTML = data.js;
+
+  });
+}
+function somethingElse() {
+  main_content.innerHTML = "Something Else()";
+}
+
+
+

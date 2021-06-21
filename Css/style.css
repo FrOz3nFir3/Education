@@ -442,6 +442,8 @@ footer > ul{
     background-color: rgb(57, 62, 70 ,0.5);
     color: #eeeeee;
 }
+
+
 @media screen and (max-width: 768px) {
     .compiler{
         display: none;
