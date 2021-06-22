@@ -195,10 +195,16 @@ footer > ul{
 /********************************/
 /*Contact*/
 .navbar-brand{
-    margin-left: 60px;
+    position: relative;
+    left: 4vw;
 }
 .navbar-nav{
-    margin-right: 40px;
+    position: relative;
+    right: 2.5vw;
+}
+.navbar-toggler{
+    position: relative;
+    right: 4vw;
 }
 .contact_body{
     display: flex;

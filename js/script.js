@@ -1,3 +1,9 @@
+var htmlJson;
+// reading json file and updating the results of it to the variable 
+$.getJSON("../data.json", function (data) {
+  htmlJson = data;
+});
+
 var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
 var submitButton = document.querySelector("#submit");
@@ -140,22 +146,13 @@ function goBack() {
 //   }
 // }
 var main_content = document.querySelector(".content-main");
-function action() {
-  $.getJSON("../data.json", function (data) {
-    main_content.innerHTML = data.html;
 
-  });
+var dropDownLists = document.querySelectorAll(".dropdown-item")
 
+for (let list of dropDownLists) {
+  list.addEventListener('click', action)
 }
-function anotherAction() {
-  $.getJSON("../data.json", function (data) {
-    main_content.innerHTML = data.js;
-
-  });
+function action(event) {
+  var innerText = event.target.innerText;
+  main_content.innerHTML = htmlJson[innerText];
 }
-function somethingElse() {
-  main_content.innerHTML = "Something Else()";
-}
-
-
-
