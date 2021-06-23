@@ -12,7 +12,20 @@ COLORS:
     --light-blue:#aad8d3;
     --white: #eeeeee;
 }
-
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background: var(--white); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-blue); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue); 
+}
+/***************/
 /* reset */
 *{
     margin: 0;
@@ -420,15 +433,14 @@ footer > ul{
     left: .3em;
     right: .3em;
 }
-
-
 #compilerBtn{
+    z-index: 100;
     position: fixed;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50% , -50%);
     display: none;
-    right: 0px;
-    top: 50px;
-    bottom: 50PX;
-    border: #393e46;
+    border-radius: 5px;
 }
 .compiler_mobile{
     display: none;
@@ -456,6 +468,9 @@ footer > ul{
     }
     #compilerBtn{
         display: block;
+    }
+    .con-main-topic{
+        display: none;
     }
 }
 
