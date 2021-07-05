@@ -154,5 +154,9 @@ for (let list of dropDownLists) {
 }
 function action(event) {
   var innerText = event.target.innerText;
+  console.log(innerText)
   main_content.innerHTML = htmlJson[innerText];
+}
+function jscall() {
+  $(".content-main").load("../js/b.html");
 }
