@@ -1,9 +1,3 @@
-var htmlJson;
-// reading json file and updating the results of it to the variable 
-$.getJSON("../data.json", function (data) {
-  htmlJson = data;
-});
-
 var compiler = document.querySelector("div.compiler");
 var div = document.querySelector("div.flex");
 var submitButton = document.querySelector("#submit");
@@ -150,13 +144,10 @@ var main_content = document.querySelector(".content-main");
 var dropDownLists = document.querySelectorAll(".dropdown-item")
 
 for (let list of dropDownLists) {
-  list.addEventListener('click', action)
+  list.addEventListener('click', loadContent)
 }
-function action(event) {
-  var innerText = event.target.innerText;
-  console.log(innerText)
-  main_content.innerHTML = htmlJson[innerText];
-}
-function jscall() {
-  $(".content-main").load("../js/b.html");
+
+function loadContent(val) {
+  var value = val.target.innerText
+  $(".content-main").load(`../js/${value}.html`);
 }
