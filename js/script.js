@@ -146,8 +146,21 @@ var dropDownLists = document.querySelectorAll(".dropdown-item")
 for (let list of dropDownLists) {
   list.addEventListener('click', loadContent)
 }
-
+var subSectionList = document.querySelector('.sub-topics')
 function loadContent(val) {
   var value = val.target.innerText
-  $(".content-main").load(`../js/${value}.html`);
+  $(".content-main").load(`../js/${value}.html`,addingSubsections);
+}
+
+
+function addingSubsections() {
+  var sections = document.querySelector(".content-main").querySelector('main').children;
+  var fragment = document.createDocumentFragment()
+  for (const section of sections) {
+    let li = document.createElement('li')
+    li.innerHTML =
+      `<a href="#${section.id}">${section.id}</a>`
+    fragment.append(li)
+  }
+  subSectionList.append(fragment)
 }
