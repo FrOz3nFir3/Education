@@ -149,7 +149,7 @@ for (let list of dropDownLists) {
 var subSectionList = document.querySelector('.sub-topics')
 function loadContent(val) {
   var value = val.target.innerText
-  $(".content-main").load(`../js/${value}.html`,addingSubsections);
+  $(".content-main").load(`../js/${value}.html`, addingSubsections);
 }
 
 
@@ -163,4 +163,12 @@ function addingSubsections() {
     fragment.append(li)
   }
   subSectionList.append(fragment)
+}
+
+function run(elem) {
+  var elemValue = elem.value;
+  console.log(elemValue);
+  $(".content-main").load(`../js/${elemValue}.html`);
+  var abc = sessionStorage.getItem("abc");
+  console.log(abc);
 }
