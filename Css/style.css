@@ -205,6 +205,9 @@ footer > ul{
     border: none;
     background-color: #f4511e;
 }
+.content1{
+    display: none;
+}
 /********************************/
 /*Contact*/
 .navbar-brand{

@@ -145,20 +145,25 @@ var dropDownLists = document.querySelectorAll(".dropdown-item")
 
 for (let list of dropDownLists) {
   list.addEventListener('click', loadContent)
+  
 }
 var subSectionList = document.querySelector('.sub-topics')
+
 function loadContent(val) {
+  var div = document.createElement('div');
+  div.classList.add("content1");
+  console.log(div)
+  document.body.append(div);
   var value = val.target.innerText
-  $(".content-main").load(`../js/${value}.html`, addingSubsections);
+  console.log($(".content1"))
+
+  $(".content1").load(`../js/${value}.html`, addingSubsections);
 }
 
 
 function addingSubsections() {
-  // var div = document.createElement('div');
-  // div.classList.add("content");
-  // console.log(div)
-  var sections = document.querySelector(".content-main").querySelector('main').children;
-  // console.log(sections)
+  var sections = document.querySelector(".content1").querySelector('main').children;
+  // console.log(document.querySelector(".content1").querySelector('main'))
   var fragment = document.createDocumentFragment()
   
   for (const section of sections) {
@@ -168,12 +173,15 @@ function addingSubsections() {
     fragment.append(li)
   }
   subSectionList.append(fragment)
+  var test2 = subSectionList.children
+  for (const test1 of test2){
+    test1.addEventListener('click', test3)
+  }
+  // console.log(subSectionList)
+  
+}
+function test3(test4)
+{
+  console.log(test4)
 }
 
-function run(elem) {
-  var elemValue = elem.value;
-  console.log(elemValue);
-  $(".content-main").load(`../js/${elemValue}.html`);
-  var abc = sessionStorage.getItem("abc");
-  console.log(abc);
-}
