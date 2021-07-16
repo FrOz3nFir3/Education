@@ -152,10 +152,10 @@ var subSectionList = document.querySelector('.sub-topics')
 function loadContent(val) {
   var div = document.createElement('div');
   div.classList.add("content1");
-  console.log(div)
+  // console.log(div)
   document.body.append(div);
   var value = val.target.innerText
-  console.log($(".content1"))
+  // console.log($(".content1"))
 
   $(".content1").load(`../js/${value}.html`, addingSubsections);
 }
@@ -182,6 +182,8 @@ function addingSubsections() {
 }
 function test3(test4)
 {
-  console.log(test4)
+   var val = test4.target.innerText;
+  console.log(val);
+  
 }
 
