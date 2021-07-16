@@ -184,6 +184,8 @@ function test3(test4)
 {
    var val = test4.target.innerText;
   console.log(val);
+  var test6 = `#${val}`
+  console.log(test6)
   
 }
 
