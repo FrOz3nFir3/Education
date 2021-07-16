@@ -154,8 +154,13 @@ function loadContent(val) {
 
 
 function addingSubsections() {
+  // var div = document.createElement('div');
+  // div.classList.add("content");
+  // console.log(div)
   var sections = document.querySelector(".content-main").querySelector('main').children;
+  // console.log(sections)
   var fragment = document.createDocumentFragment()
+  
   for (const section of sections) {
     let li = document.createElement('li')
     li.innerHTML =
