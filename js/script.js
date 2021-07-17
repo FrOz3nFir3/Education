@@ -73,7 +73,6 @@ function removeCompiler() {
 function buttonAlreadyExists(name) {
   return document.querySelector(name);
 }
-
 // hitting api for compiler sections
 submitButton.addEventListener("click", fetchOutput);
 
@@ -173,6 +172,7 @@ function addingSubsections() {
     fragment.append(li)
   }
   subSectionList.append(fragment)
+  
   var test2 = subSectionList.children
   for (const test1 of test2){
     test1.addEventListener('click', test3)
@@ -183,9 +183,13 @@ function addingSubsections() {
 function test3(test4)
 {
    var val = test4.target.innerText;
-  console.log(val);
-  var test6 = `#${val}`
-  console.log(test6)
+  // console.log(val);
+  var ftest = document.getElementById(`${val}`);
+  console.log(ftest)
+  
+
+
+
   
 }
 
