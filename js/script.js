@@ -185,7 +185,10 @@ function test3(test4)
    var val = test4.target.innerText;
   // console.log(val);
   var ftest = document.getElementById(`${val}`);
-  console.log(ftest)
+  // console.log(ftest)
+  var send = document.querySelector(".content-main")
+  send.append(ftest)
+
   
 
 
