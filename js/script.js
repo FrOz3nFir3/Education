@@ -171,20 +171,21 @@ function addingSubsections() {
       `<a href="#${section.id}">${section.id}</a>`
     fragment.append(li)
   }
+  subSectionList.innerHTML=""
   subSectionList.append(fragment)
   
-  var test2 = subSectionList.children
-  for (const test1 of test2){
-    test1.addEventListener('click', test3)
+  var addsubSection = subSectionList.children
+  for (const getsubSection of addsubSection){
+    test1.addEventListener('click', subSection)
   }
   // console.log(subSectionList)
   
 }
-function test3(test4)
+function subSection(test4)
 {
    var val = test4.target.innerText;
   // console.log(val);
-  var ftest = document.getElementById(`${val}`).innerText;
+  var ftest = document.getElementById(`${val}`).innerHTML;
   // console.log(ftest)
   var send = document.querySelector(".content-main").innerHTML = ftest ;
   
